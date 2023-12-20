@@ -138,9 +138,7 @@ function Footer() {
               <li>
                 <Link href="/pay">{currentLangPack.menu.pay}</Link>
               </li>
-              <li>
-                <Link href="/vacancies">{currentLangPack.menu.vacancies}</Link>
-              </li>
+              
             </ul>
           </nav>
         </div>

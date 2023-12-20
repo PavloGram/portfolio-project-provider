@@ -83,7 +83,7 @@ export const uaPackage = {
     },
   ],
   footer: {
-    title: 'Widewave',
+    title: "Widewave",
     desc: "Ми надаємо послуги по підключенню та доступу до швидкісної оптиковолоконної мережі Інтернет.",
     goodLink: "Корисні посилання",
     speedDetect: "Перевірка швидкості",
@@ -91,8 +91,8 @@ export const uaPackage = {
     publicContract: "Публічний договір (оферта)",
     routSetting: "Налаштування роутера",
     contactForMe: "Зв’язок з нами",
-    place:'San Francisco',
-    nav: 'Навігація',
+    place: "San Francisco",
+    nav: "Навігація",
     officeTel: [
       {
         id: 1,
@@ -105,7 +105,7 @@ export const uaPackage = {
         telText: "(rus, eng) +1(305) 462 XX XX",
       },
     ],
-    officeEmail: 'Your@gmail.com',
+    officeEmail: "Your@gmail.com",
     timeForWork: "Години роботи з 9:00 до 19:00",
     navigate: "Навігація",
   },
@@ -265,7 +265,7 @@ export const uaPackage = {
     message: "Повідомлення*",
     state: "Ваш штат*",
     terrif: "Тариф*",
-    address:'Ваша адресса*',
+    address: "Ваша адресса*",
     send: "Відправити",
     sendApp: "Відправити заявку",
   },
@@ -274,8 +274,8 @@ export const uaPackage = {
   payText: "Дякуємо що Ви з нами",
   pay: "Оплатити",
   rights: "© WideWave всі права захищені.",
-  errorMsg: "Повідомлення надіслано!",
-  successMsg: "Щось пішло не так",
+  errorMsg: "Щось пішло не так",
+  successMsg: "Повідомлення надіслано!",
 };
 
 export const ruPackage = {
@@ -342,7 +342,7 @@ export const ruPackage = {
     },
   ],
   footer: {
-    title: 'Widewave',
+    title: "Widewave",
     desc: "Мы предоставляем услуги по подключению и доступу к скоростной оптиковолоконной сети Интернет.",
     goodLink: "Полезные ссылки",
     speedDetect: "Проверка скорости",
@@ -350,8 +350,8 @@ export const ruPackage = {
     publicContract: "Публичный договор",
     routSetting: "Настройка роутера",
     contactForMe: "Связь с нами",
-    place:'San Francisco',
-    nav: 'Навигация',
+    place: "San Francisco",
+    nav: "Навигация",
     officeTel: [
       {
         id: 1,
@@ -364,7 +364,7 @@ export const ruPackage = {
         telText: "(rus, eng) +1(305) 462 XX XX",
       },
     ],
-    officeEmail: 'Your@gmail.com',
+    officeEmail: "Your@gmail.com",
     timeForWork: "Часы работы с 9:00 до 19:00",
     navigate: "Навигация",
   },
@@ -509,7 +509,12 @@ export const ruPackage = {
     },
   ],
 
-  actions: [{ id: 1, desc: "Внимание! В качестве специального подарка каждый, кто подключит интернет-модем и маршрутизатор, получит эксклюзивный доступ к фильмам и каналам. Тех, кто подключится до Нового года, ждет этот бонусный подарок! Воспользуйтесь этой фантастической возможностью прямо сейчас и побалуйте себя и своих близких этим специальным предложением!" }],
+  actions: [
+    {
+      id: 1,
+      desc: "Внимание! В качестве специального подарка каждый, кто подключит интернет-модем и маршрутизатор, получит эксклюзивный доступ к фильмам и каналам. Тех, кто подключится до Нового года, ждет этот бонусный подарок! Воспользуйтесь этой фантастической возможностью прямо сейчас и побалуйте себя и своих близких этим специальным предложением!",
+    },
+  ],
   callback: "Оставить заявку на подключение",
   callbackBtn: "Оставить заявку",
   formTitle: "Обратная связь",
@@ -520,7 +525,7 @@ export const ruPackage = {
     message: "сообщение*",
     state: "Ваш штат*",
     terrif: "Тариф*",
-    address:'Ваш адрес*',
+    address: "Ваш адрес*",
     send: "Отправить",
     sendApp: "Отправить заявку",
   },
@@ -543,8 +548,8 @@ export const ruPackage = {
   payText: "Спасибо что с нами",
   pay: "Оплатить",
   rights: "© WideWave все права защищены",
-  errorMsg: "Сообщение отправлено",
-  successMsg: "что-то пошло не так",
+  errorMsg: "что-то пошло не так",
+  successMsg: "Сообщение отправлено",
 };
 
 export const enPackage = {
@@ -611,7 +616,7 @@ export const enPackage = {
     },
   ],
   footer: {
-    title: 'Widewave',
+    title: "Widewave",
     desc: "We provide services for connection and access to high-speed fiber optic Internet.",
     goodLink: "Useful links",
     speedDetect: "Speed ​​check",
@@ -619,8 +624,8 @@ export const enPackage = {
     publicContract: "Public contract (offer)",
     routSetting: "Router settings",
     contactForMe: "Contact us",
-    place:'San Francisco',
-    nav: 'Navigation',
+    place: "San Francisco",
+    nav: "Navigation",
     officeTel: [
       {
         id: 1,
@@ -633,7 +638,7 @@ export const enPackage = {
         telText: "(rus, eng) +1(305) 462 XX XX",
       },
     ],
-    officeEmail: 'Your@gmail.com',
+    officeEmail: "Your@gmail.com",
     timeForWork: "Hours of operation are 9:00 a.m. to 7:00 p.m",
     navigate: "Navigation",
   },
@@ -777,7 +782,12 @@ export const enPackage = {
       ],
     },
   ],
-  actions: [{ id: 1,  desc: "Attention! As a special gift, anyone who connects an internet modem and router will receive exclusive access to movies and channels. Those who connect before the New Year will enjoy this bonus gift! Seize this fantastic opportunity now and treat yourself and your loved ones to this special offer!", }],
+  actions: [
+    {
+      id: 1,
+      desc: "Attention! As a special gift, anyone who connects an internet modem and router will receive exclusive access to movies and channels. Those who connect before the New Year will enjoy this bonus gift! Seize this fantastic opportunity now and treat yourself and your loved ones to this special offer!",
+    },
+  ],
   callback: "Submit a connection request",
   callbackBtn: "Leave a request",
   formTitle: "Feedback",
@@ -788,7 +798,7 @@ export const enPackage = {
     message: "Message*",
     state: "State*",
     terrif: "Tariff*",
-    address:'Your address*',
+    address: "Your address*",
     send: "Send",
     sendApp: "Send an application",
   },
@@ -825,6 +835,6 @@ export const enPackage = {
   payText: "Thank you for being with us",
   pay: "Pay",
   rights: "© WideWave all rights reserved.",
-  errorMsg: "Message sent!",
-  successMsg: "Something went wrong",
+  errorMsg: "Something went wrong",
+  successMsg: "Message sent!",
 };
