@@ -1,27 +1,13 @@
-import Image from "next/image";
-import React, { useEffect } from "react";
+'use client'
+import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import { heroData } from "../lib/data-hero";
-import { useLang, useLangPack } from "@/store";
+import {useLangObj} from "@/store";
+import Image from "next/image";
 
 function Banner() {
 
-  const lang = useLang();
-  const currentLang = lang.currentLang;
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
-
-   useEffect(() => {
-    if (currentLang === "en") {
-      return langPack.changeLangToEn();
-    }
-    if (currentLang === "ua") {
-      return langPack.changeLangToUa();
-    }
-    if (currentLang === "ru") {
-      return langPack.changeLangToRu();
-    }
-  }, [currentLangPack, currentLang]);
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
 
 
   return (
@@ -63,6 +49,7 @@ function Banner() {
         })}
       </Carousel>
     </section>
+    
   );
 }
 

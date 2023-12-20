@@ -1,26 +1,12 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import promoImg from "../../public/promotional-offer.jpg";
-import { useLang, useLangPack } from "@/store";
+import { useLangObj } from "@/store";
 
 function ActionCom() {
-  const lang = useLang();
-  const currentLang = lang.currentLang;
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
-
-  useEffect(() => {
-    if (currentLang === "en") {
-      return langPack.changeLangToEn();
-    }
-    if (currentLang === "ua") {
-      return langPack.changeLangToUa();
-    }
-    if (currentLang === "ru") {
-      return langPack.changeLangToRu();
-    }
-  }, [currentLangPack, currentLang]);
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
   return (
     <section>
       <ul className="max-w-[1140px] my-[50px] xl:my-[90px] mx-auto px-10">

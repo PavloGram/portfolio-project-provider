@@ -1,14 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ChevronUpIcon from "../ui/ChevronUpIcon";
-import { useLangPack } from "@/store";
+import { useLangObj } from "@/store";
 
 function Navigate() {
   const [scroll, setScroll] = React.useState(0);
 
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
 
   const handleScroll = () => {
     setScroll(window.scrollY);

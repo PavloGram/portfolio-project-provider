@@ -1,10 +1,11 @@
-import { useLangPack } from "@/store";
+'use client'
+import { useLangObj } from "@/store";
 import Link from "next/link";
 import React from "react";
 
 function TechService() {
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
   return (
     <section className="w-full h-[280px] bg-tech-bg  bg-center">
       <div className="max-w-[1140px] mx-auto text-white py-[90px] flex flex-col items-center md:flex-row md:justify-between md:px-20">

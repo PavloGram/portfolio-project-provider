@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import closeIcon from "../../public/svg/closeIcon.svg?url";
 import Image from "next/image";
-import { useLang, useLangPack, useModal } from "@/store";
+import { useLang, useLangObj, useLangPack, useModal } from "@/store";
 import FormLoader from "../ui/FormLoader";
 import { usaState } from "../lib/state";
 import { usePathname } from "next/navigation";
@@ -11,33 +11,19 @@ import ReqMsg from "../ui/ReqMsg";
 function Modal() {
   const [name, setName] = useState("");
   const [stateList, setStateList] = useState(usaState);
-  const [state, setState] = useState('');
+  const [state, setState] = useState("");
   const [tariff, setTariff] = useState([]);
   const [selectTariff, setSelectTariff] = useState([]);
   const [tel, setTel] = useState("");
   const [address, setAddress] = useState("");
   const [isActLoader, setIsActLoader] = useState(false);
-  const lang = useLang();
-  const currentLang = lang.currentLang;
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
+  const currentLang = langObj.currentLang.lang;
   const [reqMsg, setReqMsg] = useState("success");
   const [isActMsg, setIsActMsg] = useState(false);
   const modal = useModal();
   const path = usePathname();
-
-
-  useEffect(() => {
-    if (currentLang === "en") {
-      return langPack.changeLangToEn();
-    }
-    if (currentLang === "ua") {
-      return langPack.changeLangToUa();
-    }
-    if (currentLang === "ru") {
-      return langPack.changeLangToRu();
-    }
-  }, [currentLang]);
 
   useEffect(() => {
     if (currentLang === "en") {
@@ -65,7 +51,6 @@ function Modal() {
     setIsActMsg(false);
   }
 
-
   function handleSubmit(e) {
     e.preventDefault();
     const data = {
@@ -73,18 +58,16 @@ function Modal() {
       state,
       selectTariff,
       tel,
-      address
+      address,
     };
-   
+
     setIsActLoader(true);
 
     setName("");
     setState(currentLangPack.formText.state);
-    setSelectTariff(currentLangPack.formText.terrif)
+    setSelectTariff(currentLangPack.formText.terrif);
     setTel("");
-    setAddress("")
-   
-   
+    setAddress("");
 
     fetch("/api/modalForm", {
       method: "post",
@@ -139,28 +122,29 @@ function Modal() {
               onChange={(e) => setName(e.target.value)}
               required
             ></input>
-            <select
-              name="location"
-              className=" py-[10px] pr-4 pl-[30px] outline-none border border-[#ced4da] rounded focus:border-blue-500"
-              onChange={(e) => setState(e.target.value)}
-              
-           >
-              <option>{currentLangPack.formText.state}</option>
-              {stateList.map((el) => {
-                return (
-                  <option key={el.id} value={el.engName}>
-                    {currentLang === "en" ? el.engName : el.ruName}
-                  </option>
-                );
-              })}
-            </select>
-
+            <p className="pl-[30px]">
+              {currentLangPack.formText.state}</p>
+              <select
+                name="location"
+                className=" py-[10px] pr-4 pl-[30px] outline-none border border-[#ced4da] rounded focus:border-blue-500"
+                onChange={(e) => setState(e.target.value)}
+              >
+                {stateList.map((el) => {
+                  return (
+                    <option key={el.id} value={el.engName}>
+                      {currentLang === "en" ? el.engName : el.ruName}
+                    </option>
+                  );
+                })}
+              </select>
+            
+              <p className="pl-[30px]">{currentLangPack.formText.terrif}</p>
             <select
               name="price"
               onChange={(e) => setSelectTariff(e.target.value)}
               className="py-[10px] pr-4 pl-[30px] outline-none border border-[#ced4da] rounded focus:border-blue-500"
             >
-              <option>{currentLangPack.formText.terrif}</option>
+             
               {tariff?.map((el) => {
                 return (
                   <option key={el.id} value={el.tarrifName}>

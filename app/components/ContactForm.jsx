@@ -1,16 +1,14 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import conatctsThumb from "../../public/tabThumb.png";
 import FormLoader from "../ui/FormLoader";
-import { useLang, useLangPack } from "@/store";
+import { useLangObj } from "@/store";
 import ReqMsg from "../ui/ReqMsg";
 
 function ContactForm() {
-  const lang = useLang();
-  const currentLang = lang.currentLang;
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
@@ -19,23 +17,11 @@ function ContactForm() {
   const [isActMsg, setIsActMsg] = useState(false);
   const [reqMsg, setReqMsg] = useState("success");
 
-  useEffect(() => {
-    if (currentLang === "en") {
-      return langPack.changeLangToEn();
-    }
-    if (currentLang === "ua") {
-      return langPack.changeLangToUa();
-    }
-    if (currentLang === "ru") {
-      return langPack.changeLangToRu();
-    }
-  }, [currentLangPack, currentLang]);
-
   function toggleStateMsg() {
     setIsActMsg(false);
   }
 
-  function handleSubmit (e) {
+  function handleSubmit(e) {
     e.preventDefault();
     const data = {
       name,
@@ -68,9 +54,8 @@ function ContactForm() {
           setIsActMsg(true);
           setTimeout(toggleStateMsg, 2500);
         }
-      })
-    
-  };
+      });
+  }
 
   return (
     <section>

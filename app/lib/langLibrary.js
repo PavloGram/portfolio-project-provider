@@ -110,7 +110,7 @@ export const uaPackage = {
     navigate: "Навігація",
   },
   positionOrSite: "Ви тут: ",
-  terriftoService: "Тарифи на послугу",
+  terrifToService: "Тарифи на послугу",
   internetPack: [
     {
       id: 1,
@@ -369,7 +369,7 @@ export const ruPackage = {
     navigate: "Навигация",
   },
   positionOrSite: "Вы здесь: ",
-  terriftoService: "Таррифы на услугу",
+  terrifToService: "Тарифы на услугу",
   internetPack: [
     {
       id: 1,

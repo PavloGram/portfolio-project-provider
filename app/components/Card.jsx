@@ -2,30 +2,16 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import CheckIcon from "../ui/CheckIcon";
-import { useLang, useLangPack } from "@/store";
+import { useLangObj } from "@/store";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 function Card({ srcImg }) {
   const [currentTarrifArr, setCurrentTarrifArr] = useState([]);
-  const lang = useLang();
-  const currentLang = lang.currentLang;
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
 
   const path = usePathname();
-
-  useEffect(() => {
-    if (currentLang === "en") {
-      return langPack.changeLangToEn();
-    }
-    if (currentLang === "ua") {
-      return langPack.changeLangToUa();
-    }
-    if (currentLang === "ru") {
-      return langPack.changeLangToRu();
-    }
-  }, [currentLangPack, currentLang]);
 
   useEffect(() => {
     if (path === "/internet") {
@@ -37,12 +23,12 @@ function Card({ srcImg }) {
     if (path === "/web") {
       return setCurrentTarrifArr(currentLangPack.securetyPack);
     }
-  }, [currentLangPack, currentLang]);
+  }, [currentLangPack, path]);
 
   return (
     <section>
       <h1 className=" text-[#157696] text-21px md:text-[25px] lg:text-[30px] xl:text-[38px] text-center mt-7 xl:mt-[50px]">
-        Тарифи на послугу
+        {currentLangPack.terrifToService}
       </h1>
       <div className="max-w-[1140px] my-[50px] xl:my-[90]px pt-5 px-5 flex flex-wrap gap-5 mx-auto ">
         {currentTarrifArr?.map((el) => {
@@ -62,26 +48,27 @@ function Card({ srcImg }) {
               </div>
               <div className="w-[320px] mx-auto py-[60px] pl-16">
                 <ul>
-                  {el.benefits.map( e => {
+                  {el.benefits.map((e) => {
                     return (
-                       <li key={e.id} className="flex gap-x-2 mb-4">
-                    <CheckIcon width={17} height={17} />
+                      <li key={e.id} className="flex gap-x-2 mb-4">
+                        <CheckIcon width={17} height={17} />
 
-                    <p>{e.desc}</p>
-                  </li>
-                    )
+                        <p>{e.desc}</p>
+                      </li>
+                    );
                   })}
-                 
-                
                 </ul>
                 <div className="flex flex-col ">
-                  <p >{el.telling}</p>
+                  <p>{el.telling}</p>
                   <ul>
-                    {el.numForCall.map(e => {
-                    return (<li key={e.id}><Link href={e.telLink}>{e.telText}</Link></li>)
-                  })}
+                    {el.numForCall.map((e) => {
+                      return (
+                        <li key={e.id}>
+                          <Link href={e.telLink}>{e.telText}</Link>
+                        </li>
+                      );
+                    })}
                   </ul>
-                                   
                 </div>
               </div>
             </div>

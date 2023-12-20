@@ -1,24 +1,10 @@
 "use client";
-import { useLang, useLangPack, useModal } from "@/store";
+import { useLangObj, useModal } from "@/store";
 import React, { useEffect } from "react";
 
 function Contact() {
-  const lang = useLang();
-  const currentLang = lang.currentLang;
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
-
-  useEffect(() => {
-    if (currentLang === "en") {
-      return langPack.changeLangToEn();
-    }
-    if (currentLang === "ua") {
-      return langPack.changeLangToUa();
-    }
-    if (currentLang === "ru") {
-      return langPack.changeLangToRu();
-    }
-  }, [currentLangPack, currentLang]);
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
   const modal = useModal();
   return (
     <section className="pt-[75px] pb-[65px] bg-contact-bg ">

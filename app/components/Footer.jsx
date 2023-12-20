@@ -7,14 +7,12 @@ import PhoneSvg from "../ui/PhoneIcon";
 import MapsIcon from "../ui/MapsIcon";
 import InstagramIcon from "../ui/InstagramIcon";
 import FacebookIcon from "../ui/FacebookIcon";
-import { useLangPack } from "@/store";
+import { useLangObj } from "@/store";
 import TwitterIcon from "../ui/TwitterIcon";
 
 function Footer() {
-
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
-
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
 
   return (
     <>
@@ -26,7 +24,7 @@ function Footer() {
               {currentLangPack.footer.title}
             </h2>
             <p className="mb-4 max-w-[500px] md:max-w-[330px] lg:max-w-[220px] xl:max-w-[255px]">
-            {currentLangPack.footer.desc}
+              {currentLangPack.footer.desc}
             </p>
             <ul className="flex justify-center gap-x-2 md:justify-start">
               <li>
@@ -56,11 +54,14 @@ function Footer() {
             </ul>
           </div>
           <div className=" w-[500px] md:w-[330px] lg:w-[220px] xl:w-[255px]">
-            <h2 className="my-7 text-[25px] font-bold"> {currentLangPack.footer.goodLink}</h2>
+            <h2 className="my-7 text-[25px] font-bold">
+              {" "}
+              {currentLangPack.footer.goodLink}
+            </h2>
             <ul className=" flex flex-col gap-y-[10px]">
               <li>
                 <Link href="http://metannet.speedtestcustom.com/">
-                {currentLangPack.footer.speedDetect}
+                  {currentLangPack.footer.speedDetect}
                 </Link>
               </li>
               <li>
@@ -80,7 +81,9 @@ function Footer() {
             </ul>
           </div>
           <address className="not-italic  w-[500px] md:w-[330px] lg:w-[220px] xl:w-[255px]">
-            <h2 className="text-[25px] my-7 font-bold">{currentLangPack.footer.contactForMe}</h2>
+            <h2 className="text-[25px] my-7 font-bold">
+              {currentLangPack.footer.contactForMe}
+            </h2>
             <ul className="flex flex-col gap-y-3">
               <li className="flex flex-col items-center gap-x-3 md:flex-row">
                 <MapsIcon width={20} height={20} />
@@ -91,18 +94,20 @@ function Footer() {
 
                 <ul className="flex flex-col">
                   {currentLangPack.footer.officeTel?.map((el) => {
-                    return (<li key={el.id}>
-                      <Link  href={`tel:${el.telLink}`}>
-                    {el.telText}
-                  </Link>
-                    </li> )
-                  })}                  
+                    return (
+                      <li key={el.id}>
+                        <Link href={`tel:${el.telLink}`}>{el.telText}</Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </li>
               <li className="flex flex-col items-center gap-x-3 md:flex-row">
                 <MailSvg width={18} height={20} />
 
-                <a href={`mailto:${currentLangPack.footer.officeEmail}`}>{currentLangPack.footer.officeEmail}</a>
+                <a href={`mailto:${currentLangPack.footer.officeEmail}`}>
+                  {currentLangPack.footer.officeEmail}
+                </a>
               </li>
               <li className="flex flex-col items-center gap-x-3 md:flex-row">
                 <ClockIcon width={20} height={20} />
@@ -112,7 +117,9 @@ function Footer() {
           </address>
 
           <nav className=" w-[500px] md:w-[330px] lg:w-[220px] xl:w-[255px]">
-            <h2 className="text-[25px] my-7 font-bold">{currentLangPack.footer.nav}</h2>
+            <h2 className="text-[25px] my-7 font-bold">
+              {currentLangPack.footer.nav}
+            </h2>
             <ul className="flex flex-col gap-y-2">
               <li>
                 <Link href="/">{currentLangPack.menu.home}</Link>
@@ -138,7 +145,6 @@ function Footer() {
               <li>
                 <Link href="/pay">{currentLangPack.menu.pay}</Link>
               </li>
-              
             </ul>
           </nav>
         </div>

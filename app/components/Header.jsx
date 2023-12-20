@@ -11,13 +11,13 @@ import MailSvg from "../ui/MailIcon";
 import InstagramIcon from "../ui/InstagramIcon";
 import FacebookIcon from "../ui/FacebookIcon";
 import LangToggle from "../ui/LangToggle";
-import { useLangPack } from "@/store";
+import { useLangObj} from "@/store";
 import TwitterIcon from "../ui/TwitterIcon";
 
 function Header() {
   const [actMobMeny, setActMobMenu] = useState(false);
-  const langPack = useLangPack();
-  const currentLangPack = langPack.currentLangPack;
+  const langObj = useLangObj();
+  const currentLangPack = langObj.currentLang.langPack;
 
   return (
     <header className="mx-auto">
