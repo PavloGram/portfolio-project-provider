@@ -24,7 +24,7 @@ function Navigate() {
   return (
     <>
       <div
-        className={`trans hidden z-40 md:flex font-bold w-[800px] lg:w-[960px] xl:w-[1140px]   p-4 pl-0 fixed ${
+        className={`trans hidden z-40 md:flex font-bold w-[760px] lg:w-[960px] xl:w-[1140px]   p-4 pl-0 fixed ${
           scroll > 200
             ? "top-0 bg-black/[0.6] text-white"
             : "top-[100px] bg-white text-black"
