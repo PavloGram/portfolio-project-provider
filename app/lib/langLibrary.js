@@ -197,12 +197,12 @@ export const uaPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -523,12 +523,12 @@ export const enPackage = {
     {
       id: 1,
       telLink: "/",
-      telText: "(ukr, rus) +1(689) 212 XX XX",
+      telText: "(ukr, rus) +1(689) 777 77 77",
     },
     {
       id: 2,
       telLink: "/",
-      telText: "(rus, eng) +1(305) 462 XX XX",
+      telText: "(rus, eng) +1(305) 777 77 77",
     },
   ],
   footer: {
@@ -664,12 +664,12 @@ export const enPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -688,12 +688,12 @@ export const enPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
