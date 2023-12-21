@@ -151,7 +151,7 @@ function Footer() {
       </footer>
       <div className="  bg-[#079fd1] w-full   ">
         <div className="max-w-[960px] xl:max-w-[1140px] flex justify-center  mx-auto border-t border-white text-white py-7 px-6 text-center">
-          <p>{currentLangPack.rights}</p>
+          <p>{currentLangPack.rights.text}<Link href={currentLangPack.rights.link} className="transition hover:text-black underline duration-300">{currentLangPack.rights.name}</Link></p>
         </div>
       </div>
     </>

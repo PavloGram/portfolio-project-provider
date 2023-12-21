@@ -1,4 +1,4 @@
-import logoImg from "../../public/logoNoBgZip.png";
+import logoImg from "../../public/logoNoBgZip.jpg";
 export const uaPackage = {
   menu: {
     home: "Головна",
@@ -11,60 +11,18 @@ export const uaPackage = {
     pay: "Оплата",
     vacancies: "Вакансії",
   },
-  homePage: [
-    {
-      id: 1,
-      title: "Інтернет у кожен дім",
-      description:
-        "Ми невпинно працюємо над покращенням якості  високошвидкісного інтернету WideWave." +
-        " " +
-        " Наш досвід та висока кваліфікація спеціалістів, використання передових технологій -" +
-        " " +
-        "все це забезпечує комфортне підключення, високий рівень сервісу та якісний інтернет.",
-      iconUrl: logoImg,
-      bg: "bg-blue-hero-bg",
-    },
-    {
-      id: 2,
-      title: "Підключайтесь і отримайте бонуси",
-      description:
-        " Ваш дім вже підключено до мережі Інтернет іншого провайдера?" +
-        " " +
-        "Ви не дуже задоволені швидкістю, якістю та обслуговуванням?" +
-        " " +
-        "При підключенні та переході від іншого провайдера до мережі" +
-        " " +
-        "Інтернет WideWave",
-      iconUrl: logoImg,
-      bg: "bg-yellow-hero-bg",
-    },
-    {
-      id: 3,
-      title: "Інтернет у кожен дім",
-      description:
-        "Ми невпинно працюємо над покращенням якості  високошвидкісного інтернету WideWave." +
-        " " +
-        " Наш досвід та висока кваліфікація спеціалістів, використання передових технологій -" +
-        " " +
-        "все це забезпечує комфортне підключення, високий рівень сервісу та якісний інтернет.",
-      iconUrl: logoImg,
-      bg: "bg-blue-hero-bg",
-    },
-    {
-      id: 4,
-      title: "Підключайтесь і отримайте бонуси",
-      description:
-        " Ваш дім вже підключено до мережі Інтернет іншого провайдера?" +
-        " " +
-        "Ви не дуже задоволені швидкістю, якістю та обслуговуванням?" +
-        " " +
-        "При підключенні та переході від іншого провайдера до мережі" +
-        " " +
-        "Інтернет WideWave",
-      iconUrl: logoImg,
-      bg: "bg-yellow-hero-bg",
-    },
-  ],
+  homePage: {
+    title: "Інтернет у кожен дім",
+    description:
+      "Ми невпинно працюємо над покращенням якості  високошвидкісного інтернету StarsNet." +
+      " " +
+      " Наш досвід та висока кваліфікація спеціалістів, використання передових технологій -" +
+      " " +
+      "все це забезпечує комфортне підключення, високий рівень сервісу та якісний інтернет.",
+    iconUrl: logoImg,
+    bg: "bg-blue-hero-bg",
+  },
+
   vacanc: {
     toJoob: "Запрошуємо на роботу",
     myVacanc: "Наші вакнсії",
@@ -74,16 +32,16 @@ export const uaPackage = {
     {
       id: 1,
       telLink: "/",
-      telText: "(ukr, rus) +1(689) 212 XX XX",
+      telText: "(ukr, rus) +1(689) 777 77 77",
     },
     {
       id: 2,
       telLink: "/",
-      telText: "(rus, eng) +1(305) 462 XX XX",
+      telText: "(rus, eng) +1(305) 777 77 77",
     },
   ],
   footer: {
-    title: "Widewave",
+    title: "StarsNet",
     desc: "Ми надаємо послуги по підключенню та доступу до швидкісної оптиковолоконної мережі Інтернет.",
     goodLink: "Корисні посилання",
     speedDetect: "Перевірка швидкості",
@@ -97,15 +55,15 @@ export const uaPackage = {
       {
         id: 1,
         telLink: "/",
-        telText: "(ukr, rus) +1(689) 212 XX XX",
+        telText: "(ukr, rus) +1(689) 777 77 77",
       },
       {
         id: 2,
         telLink: "/",
-        telText: "(rus, eng) +1(305) 462 XX XX",
+        telText: "(rus, eng) +1(305) 777 77 77",
       },
     ],
-    officeEmail: "Your@gmail.com",
+    officeEmail: "StarsNet@gmail.com",
     timeForWork: "Години роботи з 9:00 до 19:00",
     navigate: "Навігація",
   },
@@ -125,12 +83,12 @@ export const uaPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -147,12 +105,12 @@ export const uaPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -169,12 +127,12 @@ export const uaPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -191,12 +149,12 @@ export const uaPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -215,12 +173,12 @@ export const uaPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -270,10 +228,14 @@ export const uaPackage = {
     sendApp: "Відправити заявку",
   },
   about:
-    "Wide wave -це інноваційна компанія, що спеціалізується на розробці та просуванні IT -технологій та соціальних медіа. Ми зосереджені на творенні унікальних та ефективних рішень для наших клієнтів, допомагаючи їм побудувати сильну присутність в он-лайн середовищі. Також компанія займається безпекою Вашого інтернет-простоту та Вашого життя. З нами Ви досягнуте нових висот та матимете можливість успішно здійснювати свою діяльність через якісний та супер швидкісний інтернет. А можливість переглядати фільми та мати доступ до безліч телеканалів, покращить якість Вашого життя і допоможе провести чудово і корисно час. З нами Ваше життя стане якіснішим і наповниться новими враженнями та досягненнями! Wide Wave - це якість, швидкість та безпека!",
+    "StarsNet -це інноваційна компанія, що спеціалізується на розробці та просуванні IT -технологій та соціальних медіа. Ми зосереджені на творенні унікальних та ефективних рішень для наших клієнтів, допомагаючи їм побудувати сильну присутність в он-лайн середовищі. Також компанія займається безпекою Вашого інтернет-простоту та Вашого життя. З нами Ви досягнуте нових висот та матимете можливість успішно здійснювати свою діяльність через якісний та супер швидкісний інтернет. А можливість переглядати фільми та мати доступ до безліч телеканалів, покращить якість Вашого життя і допоможе провести чудово і корисно час. З нами Ваше життя стане якіснішим і наповниться новими враженнями та досягненнями! StarsNet - це якість, швидкість та безпека!",
   payText: "Дякуємо що Ви з нами",
   pay: "Оплатити",
-  rights: "© WideWave всі права захищені.",
+  rights: {
+    text: 'Розробив ',
+    name: 'Pavlo Hramazhora',
+    link:'https://www.upwork.com/freelancers/~016ecc2fd9a58fe3a8'
+  },
   errorMsg: "Щось пішло не так",
   successMsg: "Повідомлення надіслано!",
 };
@@ -290,40 +252,15 @@ export const ruPackage = {
     pay: "Оплата",
     vacancies: "Вакансии",
   },
-  homePage: [
-    {
-      id: 1,
-      title: "Интернет в каждый дом",
-      description:
-        "Мы постоянно работаем над улучшением качества высокоскоростного интернета WideWave. Наш опыт и высокая квалификация специалистов, использование передовых технологий – все это обеспечивает комфортное подключение, высокий уровень сервиса и качественный интернет.",
-      iconUrl: logoImg,
-      bg: "bg-blue-hero-bg",
-    },
-    {
-      id: 2,
-      title: "Подключайтесь и получайте бонусы",
-      description:
-        "Ваш дом уже подключен к сети Интернет другого провайдера? Вы не очень довольны скоростью, качеством и обслуживанием? При подключении и переходе от другого провайдера в Интернет WideWave",
-      iconUrl: logoImg,
-      bg: "bg-yellow-hero-bg",
-    },
-    {
-      id: 3,
-      title: "Интернет в каждый дом",
-      description:
-        "Мы постоянно работаем над улучшением качества высокоскоростного интернета WideWave. Наш опыт и высокая квалификация специалистов, использование передовых технологий – все это обеспечивает комфортное подключение, высокий уровень сервиса и качественный интернет.",
-      iconUrl: logoImg,
-      bg: "bg-blue-hero-bg",
-    },
-    {
-      id: 4,
-      title: "Подключайтесь и получайте бонусы",
-      description:
-        "Ваш дом уже подключен к сети Интернет другого провайдера? Вы не очень довольны скоростью, качеством и обслуживанием? При подключении и переходе от другого провайдера в Интернет WideWave",
-      iconUrl: logoImg,
-      bg: "bg-yellow-hero-bg",
-    },
-  ],
+  homePage: {
+    id: 1,
+    title: "Интернет в каждый дом",
+    description:
+      "Мы постоянно работаем над улучшением качества высокоскоростного интернета StarsNet. Наш опыт и высокая квалификация специалистов, использование передовых технологий – все это обеспечивает комфортное подключение, высокий уровень сервиса и качественный интернет.",
+    iconUrl: logoImg,
+    bg: "bg-blue-hero-bg",
+  },
+
   vacanc: {
     toJoob: "Приглашаем на работу",
     myVacanc: "Наши вакансии",
@@ -333,16 +270,16 @@ export const ruPackage = {
     {
       id: 1,
       telLink: "/",
-      telText: "(ukr, rus) +1(689) 212 XX XX",
+      telText: "(ukr, rus) +1(689) 777 77 77",
     },
     {
       id: 2,
       telLink: "/",
-      telText: "(rus, eng) +1(305) 462 XX XX",
+      telText: "(rus, eng) +1(305) 777 77 77",
     },
   ],
   footer: {
-    title: "Widewave",
+    title: "StarsNet",
     desc: "Мы предоставляем услуги по подключению и доступу к скоростной оптиковолоконной сети Интернет.",
     goodLink: "Полезные ссылки",
     speedDetect: "Проверка скорости",
@@ -356,15 +293,15 @@ export const ruPackage = {
       {
         id: 1,
         telLink: "/",
-        telText: "(ukr, rus) +1(689) 212 XX XX",
+        telText: "(ukr, rus) +1(689) 777 77 77",
       },
       {
         id: 2,
         telLink: "/",
-        telText: "(rus, eng) +1(305) 462 XX XX",
+        telText: "(rus, eng) +1(305) 777 77 77",
       },
     ],
-    officeEmail: "Your@gmail.com",
+    officeEmail: "StarsNet@gmail.com",
     timeForWork: "Часы работы с 9:00 до 19:00",
     navigate: "Навигация",
   },
@@ -384,12 +321,12 @@ export const ruPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -406,12 +343,12 @@ export const ruPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -428,12 +365,12 @@ export const ruPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -450,12 +387,12 @@ export const ruPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -474,12 +411,12 @@ export const ruPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -498,12 +435,12 @@ export const ruPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -530,7 +467,7 @@ export const ruPackage = {
     sendApp: "Отправить заявку",
   },
   about:
-    "Wide wave – это инновационная компания, специализирующаяся на разработке и продвижении IT-технологий и социальных медиа." +
+    "StarsNet – это инновационная компания, специализирующаяся на разработке и продвижении IT-технологий и социальных медиа." +
     " " +
     "  Мы сосредоточены на создании уникальных и эффективных решений для наших клиентов, помогая им построить" +
     " " +
@@ -544,10 +481,14 @@ export const ruPackage = {
     " " +
     "  С нами Ваша жизнь станет более качественной и наполнится новыми впечатлениями и достижениями!" +
     " " +
-    "  Wide Wave – это качество, скорость и безопасность!",
+    "  StarsNet – это качество, скорость и безопасность!",
   payText: "Спасибо что с нами",
   pay: "Оплатить",
-  rights: "© WideWave все права защищены",
+  rights: {
+    text: 'Разработал ',
+    name: 'Pavlo Hramazhora',
+    link:'https://www.upwork.com/freelancers/~016ecc2fd9a58fe3a8'
+  },
   errorMsg: "что-то пошло не так",
   successMsg: "Сообщение отправлено",
 };
@@ -564,40 +505,15 @@ export const enPackage = {
     pay: "Pay",
     vacancies: "Vacancies",
   },
-  homePage: [
-    {
-      id: 1,
-      title: "Internet in every home",
-      description:
-        "We are constantly working on improving the quality of WideWave high-speed Internet. Our experience and high qualification of specialists, the use of advanced technologies - all this ensures a comfortable connection, a high level of service and high-quality Internet.",
-      iconUrl: logoImg,
-      bg: "bg-blue-hero-bg",
-    },
-    {
-      id: 2,
-      title: "Connect and get bonuses",
-      description:
-        "Is your home already connected to another provider's Internet? Are you not very satisfied with the speed, quality and service? When connecting and moving from another provider to the WideWave Internet network",
-      iconUrl: logoImg,
-      bg: "bg-yellow-hero-bg",
-    },
-    {
-      id: 3,
-      title: "Internet in every home",
-      description:
-        "We are constantly working on improving the quality of WideWave high-speed Internet. Our experience and high qualification of specialists, the use of advanced technologies - all this ensures a comfortable connection, a high level of service and high-quality Internet.",
-      iconUrl: logoImg,
-      bg: "bg-blue-hero-bg",
-    },
-    {
-      id: 4,
-      title: "Connect and get bonuses",
-      description:
-        "Is your home already connected to another provider's Internet? Are you not very satisfied with the speed, quality and service? When connecting and moving from another provider to the WideWave Internet network",
-      iconUrl: logoImg,
-      bg: "bg-yellow-hero-bg",
-    },
-  ],
+  homePage: {
+    id: 1,
+    title: "Internet in every home",
+    description:
+      "We are constantly working on improving the quality of StarsNet high-speed Internet. Our experience and high qualification of specialists, the use of advanced technologies - all this ensures a comfortable connection, a high level of service and high-quality Internet.",
+    iconUrl: logoImg,
+    bg: "bg-blue-hero-bg",
+  },
+
   vacanc: {
     toJoob: "We invite you to work",
     myVacanc: "Our vacancies",
@@ -616,7 +532,7 @@ export const enPackage = {
     },
   ],
   footer: {
-    title: "Widewave",
+    title: "StarsNet",
     desc: "We provide services for connection and access to high-speed fiber optic Internet.",
     goodLink: "Useful links",
     speedDetect: "Speed ​​check",
@@ -630,15 +546,15 @@ export const enPackage = {
       {
         id: 1,
         telLink: "/",
-        telText: "(ukr, rus) +1(689) 212 XX XX",
+        telText: "(ukr, rus) +1(689) 777 77 77",
       },
       {
         id: 2,
         telLink: "/",
-        telText: "(rus, eng) +1(305) 462 XX XX",
+        telText: "(rus, eng) +1(305) 777 77 77",
       },
     ],
-    officeEmail: "Your@gmail.com",
+    officeEmail: "StarsNet@gmail.com",
     timeForWork: "Hours of operation are 9:00 a.m. to 7:00 p.m",
     navigate: "Navigation",
   },
@@ -658,12 +574,12 @@ export const enPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -680,12 +596,12 @@ export const enPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -702,12 +618,12 @@ export const enPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -724,12 +640,12 @@ export const enPackage = {
         {
           id: 1,
           telLink: "/",
-          telText: "(ukr, rus) +1(689) 212 XX XX",
+          telText: "(ukr, rus) +1(689) 777 77 77",
         },
         {
           id: 2,
           telLink: "/",
-          telText: "(rus, eng) +1(305) 462 XX XX",
+          telText: "(rus, eng) +1(305) 777 77 77",
         },
       ],
     },
@@ -803,7 +719,7 @@ export const enPackage = {
     sendApp: "Send an application",
   },
   about:
-    "Widewave, an Internet service provider under Xfiniti, offers high-speed Internet in the USA at" +
+    "StarsNet, an Internet service provider under Xfiniti, offers high-speed Internet in the USA at" +
     " " +
     "affordable prices. We have been in the market since 2020, striving to meet the needs of Internet users" +
     " " +
@@ -811,7 +727,7 @@ export const enPackage = {
     " " +
     " Our primary goal is to provide speed, quality, and a high level of service" +
     " " +
-    "for each subscriber. Widewave is an innovative company specializing in the " +
+    "for each subscriber. StarsNet is an innovative company specializing in the " +
     " " +
     "development and promotion of IT technologies and social media. We are dedicated" +
     " " +
@@ -829,12 +745,16 @@ export const enPackage = {
     " " +
     "of your life but also allow you to spend your time in a great and useful manner." +
     " " +
-    "Choose Widewave, and experience a better life filled with new impressions and " +
+    "Choose StarsNet, and experience a better life filled with new impressions and " +
     " " +
-    "achievements! Widewave signifies quality, speed, and safety.",
+    "achievements! StarsNet signifies quality, speed, and safety.",
   payText: "Thank you for being with us",
   pay: "Pay",
-  rights: "© WideWave all rights reserved.",
+  rights: {
+    text: 'Developed by ',
+    name: 'Pavlo Hramazhora',
+    link:'https://www.upwork.com/freelancers/~016ecc2fd9a58fe3a8'
+  },
   errorMsg: "Something went wrong",
   successMsg: "Message sent!",
 };

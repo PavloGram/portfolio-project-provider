@@ -14,7 +14,7 @@ function LangToggle() {
           currentLang.lang === "en"
             ? "bg-white text-[#079fd1]"
             : "bg-[#079fd1] text-white"
-        } w-8 h-8  rounded-full  border-2 border-white hover:bg-white hover:text-[#079fd1]  transition text-[14px] font-bold`}
+        } w-8 h-8  rounded-full  border-2 border-white hover:bg-white hover:text-[#079fd1]  transition duration-300 text-[14px] font-bold`}
       >
         EN
       </button>
@@ -26,7 +26,7 @@ function LangToggle() {
           currentLang.lang === "ua"
             ? "bg-white text-[#079fd1]"
             : "bg-[#079fd1] text-white"
-        } w-8 h-8  rounded-full  border-2 border-white hover:bg-white hover:text-[#079fd1] transition text-[14px] font-bold`}
+        } w-8 h-8  rounded-full  border-2 border-white hover:bg-white hover:text-[#079fd1] transition duration-300 text-[14px] font-bold`}
       >
         UA
       </button>
@@ -37,7 +37,7 @@ function LangToggle() {
           currentLang.lang === "ru"
             ? "bg-white text-[#079fd1]"
             : "bg-[#079fd1] text-white"
-        } w-8 h-8  rounded-full  border-2 border-white hover:bg-white hover:text-[#079fd1]  transition text-[14px] font-bold`}
+        } w-8 h-8  rounded-full  border-2 border-white hover:bg-white hover:text-[#079fd1]  transition duration-300 text-[14px] font-bold`}
       >
         RU
       </button>

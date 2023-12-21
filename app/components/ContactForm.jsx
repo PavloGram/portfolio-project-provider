@@ -36,7 +36,7 @@ function ContactForm() {
     setTel("");
     setEmail("");
     setMessage("");
-
+    console.log(data)
     fetch("/api/contactForm", {
       method: "post",
       body: JSON.stringify(data),

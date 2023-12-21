@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import closeIcon from "../../public/svg/closeIcon.svg?url";
 import Image from "next/image";
-import { useLang, useLangObj, useLangPack, useModal } from "@/store";
+import {useLangObj, useModal } from "@/store";
 import FormLoader from "../ui/FormLoader";
 import { usaState } from "../lib/state";
 import { usePathname } from "next/navigation";
@@ -60,7 +60,7 @@ function Modal() {
       tel,
       address,
     };
-
+    console.log(data)
     setIsActLoader(true);
 
     setName("");
@@ -128,7 +128,7 @@ function Modal() {
                 name="location"
                 className=" py-[10px] pr-4 pl-[30px] outline-none border border-[#ced4da] rounded focus:border-blue-500"
                 onChange={(e) => setState(e.target.value)}
-              >
+              ><option>-</option>
                 {stateList.map((el) => {
                   return (
                     <option key={el.id} value={el.engName}>
@@ -144,7 +144,7 @@ function Modal() {
               onChange={(e) => setSelectTariff(e.target.value)}
               className="py-[10px] pr-4 pl-[30px] outline-none border border-[#ced4da] rounded focus:border-blue-500"
             >
-             
+             <option>-</option>
               {tariff?.map((el) => {
                 return (
                   <option key={el.id} value={el.tarrifName}>

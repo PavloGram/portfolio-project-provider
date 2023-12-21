@@ -33,7 +33,7 @@ function Navigate() {
         <div>
           <Link
             href="/"
-            className="inline-block w-[105px] h-[75px] bg-logo-bg bg-cover "
+            className="inline-block w-[130px] h-[65px] bg-logo-bg bg-cover "
           ></Link>
         </div>
         <nav className="flex gap-x-1  items-center text-[13px] lg:text-[16px] xl:gap-x-4 ml-auto">

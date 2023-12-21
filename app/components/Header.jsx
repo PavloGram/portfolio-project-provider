@@ -4,7 +4,7 @@ import menuIcon from "../../public/svg/menuIcon.svg?url";
 import closeIcon from "../../public/svg/closeIcon.svg?url";
 import Image from "next/image";
 import Navigate from "./Navigate";
-import logo from "../../public/logoNoBgZip.png";
+import logo from "../../public/logoNoBgZip.jpg";
 import Link from "next/link";
 import PhoneSvg from "../ui/PhoneIcon";
 import MailSvg from "../ui/MailIcon";
@@ -28,7 +28,7 @@ function Header() {
               return (
                 <li key={el.id}>
                   <Link
-                    className="headerLink flex items-center gap-1  transition hover:text-black"
+                    className="headerLink flex items-center gap-1  transition hover:text-black duration-300"
                     href={`tel:${el.telLink}`}
                   >
                     <PhoneSvg width={12} height={12} />
@@ -41,7 +41,7 @@ function Header() {
             <li>
               <Link
                 href={`mailto:${currentLangPack.footer.officeEmail}`}
-                className="headerLink flex items-center gap-1 transition hover:text-black"
+                className="headerLink flex items-center gap-1 transition hover:text-black duration-300"
               >
                 <MailSvg width={14} height={14} />
                 {currentLangPack.footer.officeEmail}
